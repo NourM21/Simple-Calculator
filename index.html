@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts | Baloo Chettan 2 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;700&family=Cairo:wght@300;400;700&family=Josefin+Sans:wght@300;400;700&family=Open+Sans:wght@400;700&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Work+Sans:wght@200;300;400;500;600;800&display=swap" rel="stylesheet">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Simple Calculator | HTML & CSS & JS</title>
+</head>
+<body>
+    <div class="container">
+        <form class="calculator" name="calc">
+            <input type="text" class="value" name="txt" readonly />
+            <span class="num clear" onclick="document.calc.txt.value = ''">C</span>
+            <span class="num" onclick="document.calc.txt.value += '/'">/</span>
+            <span class="num" onclick="document.calc.txt.value += '*'">*</span>
+            <span class="num" onclick="document.calc.txt.value += '7'">7</span>
+            <span class="num" onclick="document.calc.txt.value += '8'">8</span>
+            <span class="num" onclick="document.calc.txt.value += '9'">9</span>
+            <span class="num" onclick="document.calc.txt.value += '-'">-</span>
+            <span class="num" onclick="document.calc.txt.value += '5'">4</span>
+            <span class="num" onclick="document.calc.txt.value += '5'">5</span>
+            <span class="num" onclick="document.calc.txt.value += '6'">6</span>
+            <span class="num plus" onclick="document.calc.txt.value += '+'">+</span>
+            <span class="num" onclick="document.calc.txt.value += '1'">1</span>
+            <span class="num" onclick="document.calc.txt.value += '2'">2</span>
+            <span class="num" onclick="document.calc.txt.value += '3'">3</span>
+            <span class="num" onclick="document.calc.txt.value += '0'">0</span>
+            <span class="num" onclick="document.calc.txt.value += '00'">00</span>
+            <span class="num" onclick="document.calc.txt.value += '.'">.</span>
+            <span class="num equal" onclick="document.calc.txt.value = eval(calc.txt.value)">=</span>
+        </form>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <!-- Main JavaScript File -->
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
